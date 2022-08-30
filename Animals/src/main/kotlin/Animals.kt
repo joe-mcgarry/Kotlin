@@ -1,4 +1,8 @@
-abstract class Animal {
+interface Roamable {
+    fun roam()
+}
+
+abstract class Animal : Roamable {
     abstract val image: String
     abstract val food: String
     abstract val habitat: String
@@ -8,7 +12,7 @@ abstract class Animal {
 
     abstract fun eat()
 
-    open fun roam() {
+    override fun roam() {
         println("The animal is roaming")
     }
 
@@ -55,6 +59,12 @@ class Lion : Feline() {
 
     override fun eat() {
         println("The lion eats $food")
+    }
+}
+
+class Vehicle : Roamable {
+    override fun roam() {
+        println("The vehicle roams")
     }
 }
 
