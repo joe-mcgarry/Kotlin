@@ -100,4 +100,12 @@ fun main() {
     val hippo = Hippo()
     vet.giveShot(hippo)
     vet.giveShot(wolf)
+
+    val roamables = arrayOf(Hippo(), Wolf(), Vehicle())
+    for (item in roamables) {
+        item.roam()
+        if (item is Animal) {
+            item.eat()
+        }
+    }
 }
