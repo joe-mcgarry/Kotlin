@@ -1,4 +1,14 @@
-data class Recipe(val title: String, val isVegetarian: Boolean)
+data class Recipe(val title: String,
+                  val mainIngredient: String,
+                  val isVegetarian: Boolean,
+                  val difficulty: String = "Easy"){
+}
+
+class Mushroom(val size: Int, val isMagic: Boolean) {
+    constructor(isMagic_param: Boolean) : this(0, isMagic_param) {
+        //Code to run when secondary constructor called
+    }
+}
 
 fun main() {
     val r1 = Recipe("Thai Curry", false)
