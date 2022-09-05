@@ -7,5 +7,6 @@ class FizzBuzzTest {
         assertEquals("1", fizzBuzz(1))
         assertEquals("Fizz", fizzBuzz(3))
         assertEquals("Buzz", fizzBuzz(5))
+        assertEquals("FizzBuzz", fizzBuzz(15))
     }
 }

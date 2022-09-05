@@ -3,14 +3,17 @@ fun main(args: Array<String>) {
 }
 
 fun fizzBuzz(num: Int) : String {
-    return if (num % 3 == 0) {
+    return if (num % 3 == 0 && num % 5 == 0) {
+        "FizzBuzz"
+    }
+    else if (num % 3 == 0) {
         "Fizz"
     }
     else if (num % 5 == 0) {
-        return "Buzz"
+        "Buzz"
     }
     else {
-        return num.toString()
+        num.toString()
     }
 
 }
