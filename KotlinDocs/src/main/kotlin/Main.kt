@@ -24,6 +24,14 @@ fun log(vararg entries: String) {
     printAll(*entries)
 }
 
+fun describeString(maybeString: String?): String {
+    if (maybeString != null && maybeString.length > 0) {
+        return "String of length ${maybeString.length}"
+    } else {
+        return "Empty or null string"
+    }
+}
+
 fun main(args: Array<String>) {
     infix fun Int.times(str: String) = str.repeat(this)
     println(2 times "Bye")
@@ -41,6 +49,10 @@ fun main(args: Array<String>) {
     printAll("Hello", "Hallo", "Bonjour", "Ohiou")
     printAllWithPrefix("Hello", "Hallo", "Bonjour", "Ohiou", prefix = "G'Day: ")
     log("Hello", "Hallo", "Bonjour", "Ohiou")
+
+    println(describeString(""))
+    println(describeString("Not null"))
+    println(describeString(" "))
 }
 
 class Person(val name: String) {
