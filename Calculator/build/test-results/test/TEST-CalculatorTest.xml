@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CalculatorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-09-29T15:40:54" hostname="Joes-Mac" time="0.065">
+  <properties/>
+  <testcase name="testMinus2From6()" classname="CalculatorTest" time="0.054"/>
+  <testcase name="testAdd2And2()" classname="CalculatorTest" time="0.002"/>
+  <testcase name="testMultiply2By2()" classname="CalculatorTest" time="0.002"/>
+  <testcase name="testDivide2By2()" classname="CalculatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
